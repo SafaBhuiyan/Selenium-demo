@@ -27,7 +27,7 @@ public class BrokenLinksDemo {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		List<WebElement> elements= driver.findElements(By.tagName("a"));
 		int noofElements = elements.size();
-		System.out.println("Number of Elementss: "+ noofElements);
+		System.out.println("Numbers of Elementss: "+ noofElements);
 		
 		for(WebElement element: elements) {
 			String url=element.getAttribute("href");
